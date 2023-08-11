@@ -45,6 +45,7 @@ export default {
 .flex-container {
     display: flex;
     text-align: center;
+    flex-wrap: wrap;
 }
 .card {
     box-shadow: 0 4px 8px 0 rgba(0,0, 0, 0.2);
@@ -64,4 +65,5 @@ img{
   width: 150px;
   height: 130px;
 }
+
 </style>

@@ -9,7 +9,9 @@ import KategoriProduk from "@/views/KategoriProduk.vue";
 
 import NotFound from "@/views/NotFound.vue";
 import Login from "@/views/Login.vue";
-import { users } from "../assets/user";
+import { users } from "../assets/User";
+import Counter from "../views/Counter.vue";
+import Todo from "../views/Todo.vue";
 
 const routes = [ 
   {
@@ -39,11 +41,10 @@ const routes = [
     props: true,
   },
   {
-    path: "/:pathMatch(.*)*",
+    path: "/:pathMatch(.*)",
     name: "NotFound",
     component: NotFound
   },
-  
   {
     path: "/login",
     name: "Login",
@@ -69,15 +70,23 @@ const routes = [
     component: Detail,
     props: true
   },
+  {
+    path: "/counter",
+    name: "Counter",
+    component: Counter,
+   },
+   {
+    path: "/todo",
+    name: "Todo",
+    component: Todo,
+   },
 ];
+
 
 const router = createRouter({
   history: createWebHistory(),
   routes,
 });
 
+
 export default router;
-
-
-
-  

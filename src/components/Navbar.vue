@@ -5,7 +5,8 @@
       <li><router-link :class="{active:rl_3}" to="/about">About</router-link></li>
       <li><router-link :class="{active:rl_4}" to="/produk">Produk</router-link></li>
       <li><router-link :class="{active:rl_5}" to="/kategori">Kategori</router-link></li>
-
+      <li><router-link :class="{active:rl_6}" to="/counter">Counter</router-link></li>
+      <li><router-link :class="{active:rl_7}" to="/todo">Todo</router-link></li>
     </ul>
   </template>
   
@@ -22,6 +23,8 @@ export default{
     const rl_3 = ref(false)
     const rl_4 = ref(false)
     const rl_5 = ref(false)
+    const rl_6 = ref(false)
+    const rl_7 = ref(false)
 
     if(props.idMenu==1){
       rl_1.value = true
@@ -29,7 +32,8 @@ export default{
       rl_3.value = false
       rl_4.value = false
       rl_5.value = false
-
+      rl_6.value = false
+      rl_7.value = false
     }
     else if(props.idMenu==2){
       rl_1.value = false
@@ -37,7 +41,8 @@ export default{
       rl_3.value = false
       rl_4.value = false
       rl_5.value = false
-
+      rl_6.value = false
+      rl_7.value = false
     }
     else if(props.idMenu==3){
       rl_1.value = false
@@ -45,7 +50,8 @@ export default{
       rl_3.value = true
       rl_4.value = false
       rl_5.value = false
-
+      rl_6.value = false
+      rl_7.value = false
     }
     else if(props.idMenu==4){
       rl_1.value = false
@@ -53,7 +59,8 @@ export default{
       rl_3.value = false
       rl_4.value = true
       rl_5.value = false
-
+      rl_6.value = false
+      rl_7.value = false
     }
     else if(props.idMenu==5){
       rl_1.value = false
@@ -61,7 +68,26 @@ export default{
       rl_3.value = false
       rl_4.value = false
       rl_5.value = true
-
+      rl_6.value = false
+      rl_7.value = false
+    }
+    else if(props.idMenu==6){
+      rl_1.value = false
+      rl_2.value = false
+      rl_3.value = false
+      rl_4.value = false
+      rl_5.value = false
+      rl_6.value = true
+      rl_7.value = false
+    }
+    else if(props.idMenu==7){
+      rl_1.value = false
+      rl_2.value = false
+      rl_3.value = false
+      rl_4.value = false
+      rl_5.value = false
+      rl_6.value = false
+      rl_7.value = true
     }
 
     return {
@@ -69,7 +95,9 @@ export default{
       rl_2,
       rl_3,
       rl_4,
-      rl_5
+      rl_5,
+      rl_6,
+      rl_7
     }
   }
 }

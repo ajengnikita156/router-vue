@@ -18,7 +18,7 @@
 </template>
 
 <script>
-import { users } from '../assets/user';
+import { users } from '../assets/User';
 
 export default {
     data() {
